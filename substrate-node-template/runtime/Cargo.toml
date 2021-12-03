@@ -195,6 +195,12 @@ git = 'https://github.com/paritytech/substrate.git'
 tag = 'devhub/latest'
 version = '4.0.0-dev'
 
+[dependencies.pallet-scheduler]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'devhub/latest'
+version = '4.0.0-dev'
+
 [features]
 default = ['std']
 runtime-benchmarks = [
@@ -236,4 +242,5 @@ std = [
     'sp-transaction-pool/std',
     'sp-version/std',
     'pallet-node-authorization/std',
+    'pallet-scheduler/std',
 ]
